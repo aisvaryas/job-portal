@@ -1,0 +1,77 @@
+/* Saved Jobs Styles */
+.saved-jobs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.saved-jobs-container h1 {
+  margin-bottom: 2rem;
+}
+
+.saved-jobs-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.saved-job-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.saved-job-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.saved-job-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark-color);
+}
+
+.saved-job-card .company {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.saved-job-card .location {
+  color: var(--text-color);
+  margin: 0.25rem 0;
+}
+
+.saved-job-card .salary {
+  color: var(--success-color);
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.actions a,
+.actions button {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions a,
+  .actions button {
+    flex: none;
+  }
+}

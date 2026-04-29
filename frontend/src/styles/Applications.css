@@ -1,0 +1,72 @@
+/* Applications Styles */
+.applications-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.applications-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-section select {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.applications-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.application-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.application-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.application-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark-color);
+}
+
+.application-card p {
+  margin: 0.25rem 0;
+  color: var(--text-color);
+}
+
+.application-card .date {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.no-data p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
